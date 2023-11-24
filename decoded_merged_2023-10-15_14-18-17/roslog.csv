@@ -1,0 +1,36 @@
+time,level,name,msg,function,file,line
+169735069.835405,INFO,nturt_push_to_control_tower_node,"Successfully connect to websocket at 140.112.14.14:21543",PushToControlTower,/root/ws/src/nturt_ros/nturt_push_to_control_tower/src/push_to_control_tower.cpp,84
+169735069.835466,INFO,rosbag2_recorder,"Event publisher thread: Starting",event_publisher_thread_main,./src/rosbag2_transport/recorder.cpp,181
+169735069.835514,INFO,rosbag2_recorder,"Listening for topics...",record,./src/rosbag2_transport/recorder.cpp,170
+169735069.835557,INFO,rosbag2_recorder,"Subscribed to topic '/system_stats'",subscribe_topic,./src/rosbag2_transport/recorder.cpp,309
+169735069.835594,INFO,rosbag2_recorder,"Subscribed to topic '/rosout'",subscribe_topic,./src/rosbag2_transport/recorder.cpp,309
+169735069.850561,INFO,socket_can_sender_node,"interface: can0",SocketCanSender,/root/ws/src/nturt_ros/nturt_can_parser/src/socket_can_sender.cpp,9
+169735069.850677,INFO,socket_can_sender_node,"timeout(s): 0.010000",SocketCanSender,/root/ws/src/nturt_ros/nturt_can_parser/src/socket_can_sender.cpp,14
+169735069.852957,INFO,rosbag2_recorder,"Subscribed to topic '/from_can_bus'",subscribe_topic,./src/rosbag2_transport/recorder.cpp,309
+169735069.857314,INFO,socket_can_receiver_node,"interface: can0",SocketCanReceiver,/root/ws/src/nturt_ros/nturt_can_parser/src/socket_can_receiver.cpp,9
+169735069.857388,INFO,socket_can_receiver_node,"interval(s): 0.010000",SocketCanReceiver,/root/ws/src/nturt_ros/nturt_can_parser/src/socket_can_receiver.cpp,14
+169735069.857456,INFO,socket_can_receiver_node,"use bus time: 0",SocketCanReceiver,/root/ws/src/nturt_ros/nturt_can_parser/src/socket_can_receiver.cpp,16
+169735070.420267,INFO,rosbag2_recorder,"Subscribed to topic '/fix'",subscribe_topic,./src/rosbag2_transport/recorder.cpp,309
+169735070.421356,INFO,rosbag2_recorder,"Subscribed to topic '/vel'",subscribe_topic,./src/rosbag2_transport/recorder.cpp,309
+169735070.421435,INFO,rosbag2_recorder,"All requested topics are subscribed. Stopping discovery...",topics_discovery,./src/rosbag2_transport/recorder.cpp,254
+169735070.423678,INFO,nmea_navsat_driver,"Successfully connected to /dev/ttyACM0 at 9600.",main,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/nodes/nmea_serial_driver.py,51
+169735097.283540,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 8*76",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735100.596533,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 2*7D",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735102.081734,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: ",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735102.790935,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 6B",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735110.282303,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 8,M,,*79",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735110.580287,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 65",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735119.307443,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 6B",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735119.697820,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 8*7F",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735122.708633,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 6B",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735123.006839,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 60",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735123.108026,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 8*7E",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735134.514703,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: ",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735148.004713,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 6C",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735157.907732,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: ,M,,0000*4B",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735172.509672,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 62",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735174.911246,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 7F",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735180.818617,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 62",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735200.510014,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 6A",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735204.512553,WARN,nmea_navsat_driver,"Received a sentence with an invalid checksum. Sentence was: 76",add_sentence,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/driver.py,124
+169735210.677797,ERROR,nmea_navsat_driver,"Ros error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)",main,/root/ws/build/nmea_navsat_driver/src/libnmea_navsat_driver/nodes/nmea_serial_driver.py,66
