@@ -66,10 +66,11 @@ grid on; grid minor;
 % Load data
 sensorData = readtable('sensor.csv');
 steeringAngle = sensorData{2:end, [1, 7]};
-steeringAngle(:, 1) = steeringAngle(:, 1) - steeringAngle(1, 1); % time offset
+% steeringAngle(:, 1) = steeringAngle(:, 1) - steeringAngle(1, 1); % time offset
 
 % plot
 plot(steeringAngle(:, 1), steeringAngle(:, 2));
+xlim([steeringAngle(1, 1), steeringAngle(size, 1)])
 xlabel('Time [s]');
 ylabel('Steering Angle [deg]');
 title('Steering Angle');

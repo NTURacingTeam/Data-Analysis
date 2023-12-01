@@ -70,20 +70,10 @@ steeringAngle = sensorData{2:end, [1, 7]};
 %Extract steering angle value
 time = steeringAngle(:, 1);
 angleValues = steeringAngle(:, 2);
-
-smoothedAngle = smoothdata(angleValues, "gaussian", 20);
-
-
-steeringAngle(:, 1) = steeringAngle(:, 1) - steeringAngle(1, 1); % time offset
-smoothedAngle(:, 2) = smooth(steeringAngle(:, 2), 0.1, 'rcloess');
-initialSteeringAngle = mean(smoothedAngle) - 1.222;
-steeringAngle(:, 2) = -(steeringAngle(:, 2) - initialSteeringAngle); % adjust and negate
-
 % plot
 figure;
 plot(steeringAngle(:, 1), steeringAngle(:, 2));
 hold on;
-plot(steeringAngle(:, 1), smoothedAngle, 'LindWidth', 2);
 xlabel('Time [s]');
 ylabel('Steering Angle [deg]');
 title('Steering Angle5');
