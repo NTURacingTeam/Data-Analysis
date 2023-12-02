@@ -12,3 +12,36 @@ for i = 1:length(lapMark1_m)-1
     writetable(sensor_sub_data, output_sensor_filename);
 end
     
+
+
+
+        %%% Battery data --------------------------------------------------
+        % 1. find the lower and upper bound by looking in the battery.csv
+        lowerBound_found = false;
+        upperBound_found = false;
+        for j=battery_iterate:+1:size(batteryData, 1)-1
+            % find the lower bound by comparing the time value
+            if ~lowerBound_found
+                if batteryData{j, 1} >= lowerBound_timeValue
+                    lowerBound_index = j;
+                    lowerBound_found = true;
+                end
+            end
+            % break this loop if the upper bound is found           
+            if ~upperBound_found
+                if batteryData{j, 1} >= upperBound_timeValue
+                    upperBound_index = j;
+                    upperBound_found = true;
+                    % update the iteration variable to reduce the time complexity to N
+                    battery_iterate = j; 
+                    break
+                end
+            end
+        end
+        % 2. Copy the specific part of data
+        batteryData_sliced = batteryData(lowerBound_index:upperBound_index, :);
+        % 3. The output file and its path
+        output_battery_file = fullfile(currentLapFolder, 'battery.csv');
+        writetable(batteryData_sliced, output_battery_file);
+        %%% Battery data end ----------------------------------------------
+
